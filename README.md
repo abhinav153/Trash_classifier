@@ -26,12 +26,12 @@ Following augementation operations were done
 ## Models
 Following modesl were mostly used for trash classification on Trashnet
 Convolutional nets used so far
-1>Densenet121
-2>ResNext-101
-3>Xception
-4>MobileNet
-5>Inception V4
-6> R-CNN
+> 1>Densenet121
+> 2>ResNext-101
+> 3>Xception
+> 4>MobileNet
+> 5>Inception V4
+> 6> R-CNN
 
 In this project , using transfer learning i trained my augmented dataset, across all this networks, adding the same set of fully connected layers across all networks .
 Using these networks as a ensemble , predictions for class of image will be made, and the model parameters would be tuned for best accuracy.
