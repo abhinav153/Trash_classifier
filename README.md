@@ -16,12 +16,11 @@ Classification of trash images using Convolutional Neural nets
 Data was augmented using computer vision python package to expand the dataset size , so that a better model could be trained
 Following augementation operations were done
 > 1. Rotation
-> 2. Brightness
-> 3. Vertical Flip
-> 4. Horizontal Flip
-> 5. Channel Shift
-> 6. Horizontal Shift
-> 7. Vertical Shift
+> 2. Vertical Flip
+> 3. Horizontal Flip
+> 4. Channel Shift
+> 5. Horizontal Shift
+> 6. Vertical Shift
 
 ## Models
 Following models were mostly used for trash classification on Trashnet
