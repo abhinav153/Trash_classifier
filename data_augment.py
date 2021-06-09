@@ -106,27 +106,24 @@ if __name__ == '__main__':
 				img_rotation = rotation(img,180)
 				cv2.imwrite(save_file+'_'+str(i+1)+'.jpg',img_rotation)
 
-				img_brightness = brightness(img,0,50)
-				cv2.imwrite(save_file+'_'+str(i+2)+'.jpg',img_brightness)
-
 				img_vertical_flip = vertical_flip(img,1)
-				cv2.imwrite(save_file+'_'+str(i+3)+'.jpg',img_vertical_flip)
+				cv2.imwrite(save_file+'_'+str(i+2)+'.jpg',img_vertical_flip)
 
 				img_horizontal_flip = horizontal_flip(img,1)
-				cv2.imwrite(save_file+'_'+str(i+4)+'.jpg',img_horizontal_flip)
+				cv2.imwrite(save_file+'_'+str(i+3)+'.jpg',img_horizontal_flip)
 
 				img_channel_shift = channel_shift(img,100)
-				cv2.imwrite(save_file+'_'+str(i+5)+'.jpg',img_channel_shift)
+				cv2.imwrite(save_file+'_'+str(i+4)+'.jpg',img_channel_shift)
 
 				img_horizontal_shift = horizontal_shift(img,0.5)
-				cv2.imwrite(save_file+'_'+str(i+6)+'.jpg',img_horizontal_shift)
+				cv2.imwrite(save_file+'_'+str(i+5)+'.jpg',img_horizontal_shift)
 
 				img_vertical_shift = vertical_shift(img,0.4)
-				cv2.imwrite(save_file+'_'+str(i+7)+'.jpg',img_vertical_shift)
+				cv2.imwrite(save_file+'_'+str(i+6)+'.jpg',img_vertical_shift)
 
-			i+=8
-
-    print('Done !!!!!')   	
+			i+=7
+	print('Done!!!!')
+  	
      
 
 
