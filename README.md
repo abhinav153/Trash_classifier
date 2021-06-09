@@ -12,16 +12,6 @@ Classification of trash images using Convolutional Neural nets
 > 3.[Classification of trashnet based on deeo learning models](https://ieeexplore.ieee.org/document/8622212)<br>
 > 4.[A novel framework for trash classification using deep learning](https://ieeexplore.ieee.org/document/8930948)<br>
 
-## Preprocessing
-Data was augmented using computer vision python package to expand the dataset size , so that a better model could be trained
-Following augementation operations were done
-> 1. Rotation
-> 2. Vertical Flip
-> 3. Horizontal Flip
-> 4. Channel Shift
-> 5. Horizontal Shift
-> 6. Vertical Shift
-
 ## Models
 Following models were mostly used for trash classification on Trashnet
 
@@ -32,8 +22,27 @@ Following models were mostly used for trash classification on Trashnet
 > 5. Inception V4
 > 6. R-CNN
 
-In this project , using transfer learning i trained my augmented dataset, across all this networks, adding the same set of fully connected layers across all networks .
-Using these networks as a ensemble , predictions for class of image will be made, and the model parameters would be tuned for best accuracy.
+In this project i used a [MobileNetV2](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4) from tensorflow hub for classification
+
+## Preprocessing
+Data was augmented using computer vision python package to expand the dataset size , so that a better model could be trained
+Following augementation operations were done
+> 1. Rotation
+> 2. Vertical Flip
+> 3. Horizontal Flip
+> 4. Channel Shift
+> 5. Horizontal Shift
+> 6. Vertical Shift
+
+
+
+In this project , using transfer learning i trained my augmented dataset, across all this networks, adding the a final fully connected layer for classification .
+The classification labels include
+> 1.Trash<br>
+> 2.Plastic<br>
+> 3.Metal<br>
+> 4.Paper<br>
+> 5.Cardboard
 
 
 ## References
