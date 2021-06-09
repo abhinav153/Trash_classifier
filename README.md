@@ -29,7 +29,7 @@ Following models were mostly used for trash classification on Trashnet
 > 1. Densenet121
 > 2. ResNext-101
 > 3. Xception
-> 4. MobileNet
+> 4. MobileNetV2
 > 5. Inception V4
 > 6. R-CNN
 
@@ -38,4 +38,5 @@ Using these networks as a ensemble , predictions for class of image will be made
 
 
 ## References
-> [Complete Image Augmentation in OpenCV](https://towardsdatascience.com/complete-image-augmentation-in-opencv-31a6b02694f5)
+> [Complete Image Augmentation in OpenCV](https://towardsdatascience.com/complete-image-augmentation-in-opencv-31a6b02694f5)<br>
+> [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub)
