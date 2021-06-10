@@ -51,9 +51,9 @@ Step 3: To run the model for prediction , copy your image files to the predictio
 > python predict.py
 
 ## Files
-**data_augment.py** - Uses the images in dataset folder , augments them and saves them in the augmentation folder
-**trash_classifier_MobileNetV2.ipynb** - Builds the model , and saves it in the saved_models folder
-**predict.py** - Runs the model, and prints the predictions of the model on the images stored in prediction_images folder
+**data_augment.py** - Uses the images in dataset folder , augments them and saves them in the data_augmented folder<br>
+**trash_classifier_MobileNetV2.ipynb** - Builds the model , and saves it in the saved_models folder<br>
+**predict.py** - Runs the model, and prints the predictions of the model on the images stored in prediction_images folder<br>
 
 
 ## References
