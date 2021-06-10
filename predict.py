@@ -1,6 +1,6 @@
 import tensorflow as tf
 import cv2
-
+import glob
 def prediction(img):
 	#rescaling image
 	img = img/255
@@ -26,9 +26,12 @@ if __name__ == '__main__':
 	model = tf.keras.models.load_model(model_path)	
 
 	#loading image
-	image_path = 'dataset_augmented/plastic/plastic_10.jpg'
-	img = cv2.imread(image_path)
+	image_paths = glob.glob('prediction_image/*')
 
 	#predicting image
-	print(prediction(img))
+	for image_path in image_paths:
+		img = cv2.imread(image_path)
+		print('prediction for {} is :'.format(image_path.split('/')[-1]),end=' ')
+		print(prediction(img))
+
 	
