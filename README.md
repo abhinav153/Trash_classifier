@@ -50,6 +50,11 @@ Step 2: Ensure dependencies are installed as given in requirement.txt file or ma
 Step 3: To run the model for prediction , copy your image files to the prediction_image folder, and run<br>
 > python predict.py
 
+## Files
+data_augment.py - uses the images in dataset folder , augments them and saves them in the augmentation folder
+trash_classifier_MobileNetV2.ipynb - build the model , and saves it in the saved_models folder
+predict.oy - runs the model, and prints the predictions of the model on the images stored in prediction_images folder
+
 
 ## References
 > [Complete Image Augmentation in OpenCV](https://towardsdatascience.com/complete-image-augmentation-in-opencv-31a6b02694f5)<br>
