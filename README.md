@@ -44,6 +44,12 @@ The classification labels include
 > 4.Paper<br>
 > 5.Cardboard
 
+## Usage 
+Step 1. Clone the repository<br>
+Step 2: Ensure dependencies are installed as given in requirement.txt file or make a virtualenv<br>
+Step 3: To run the model for prediction , copy your image files to the prediction_image folder, and run<br>
+> python predict.py
+
 
 ## References
 > [Complete Image Augmentation in OpenCV](https://towardsdatascience.com/complete-image-augmentation-in-opencv-31a6b02694f5)<br>
