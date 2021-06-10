@@ -1,0 +1,6 @@
+tensorflow>=2.5.0
+tensorflow_hub>=0.8.0
+open-cv>=4.2.0
+numpy>=1.19.5
+matplotlib>=1.19.5
+PIL>=4.5.1
