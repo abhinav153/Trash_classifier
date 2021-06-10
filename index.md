@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# Trash_classifier
+Classification of trash images using Convolutional Neural nets
 
-You can use the [editor on GitHub](https://github.com/chel310/Trash_classifier/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Prior Research Work
+## Dataset used
+> [Trashnet](https://github.com/garythung/trashnet)
+## Papers
 
-### Markdown
+> 1.[Classification of trash for recyclability status](http://cs229.stanford.edu/proj2016/report/ThungYang-ClassificationOfTrashForRecyclabilityStatus-report.pdf)<br>
+> 2.[Smart trashnet : Waste localization](http://cs229.stanford.edu/proj2017/final-reports/5226723.pdf)<br>
+> 3.[Classification of trashnet based on deeo learning models](https://ieeexplore.ieee.org/document/8622212)<br>
+> 4.[A novel framework for trash classification using deep learning](https://ieeexplore.ieee.org/document/8930948)<br>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Models
+Following models were mostly used for trash classification on Trashnet
 
-```markdown
-Syntax highlighted code block
+> 1. Densenet121
+> 2. ResNext-101
+> 3. Xception
+> 4. MobileNetV2
+> 5. Inception V4
+> 6. R-CNN
 
-# Header 1
-## Header 2
-### Header 3
+In this project i used a [MobileNetV2](https://tfhub.dev/google/tf2-preview/mobilenet_v2/feature_vector/4) from tensorflow hub for classification
 
-- Bulleted
-- List
+## Preprocessing
+Data was augmented using computer vision python package to expand the dataset size , so that a better model could be trained
+Following augementation operations were done
+> 1. Rotation
+> 2. Vertical Flip
+> 3. Horizontal Flip
+> 4. Channel Shift
+> 5. Horizontal Shift
+> 6. Vertical Shift
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
+In this project , using transfer learning i trained my augmented dataset, across all this networks, adding the a final fully connected layer for classification .
+The classification labels include
+> 1.Trash<br>
+> 2.Plastic<br>
+> 3.Metal<br>
+> 4.Paper<br>
+> 5.Cardboard
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+## Usage 
+Step 1. Clone the repository<br>
+Step 2: Ensure dependencies are installed as given in requirement.txt file or make a virtualenv<br>
+Step 3: To run the model for prediction , copy your image files to the prediction_image folder, and run<br>
+> python predict.py
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/chel310/Trash_classifier/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## References
+> [Complete Image Augmentation in OpenCV](https://towardsdatascience.com/complete-image-augmentation-in-opencv-31a6b02694f5)<br>
+> [Transfer learning with TensorFlow Hub](https://www.tensorflow.org/tutorials/images/transfer_learning_with_hub)
