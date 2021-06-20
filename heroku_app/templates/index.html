@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	
+    <title>Page Title</title>
+</head>
+<body>
+
+<h1>Trash Classifier</h1>
+<p>Upload your image below and click submit for predictions</p>
+
+<form  enctype="multipart/form-data" method="post" id="files" name="files">
+	<input type="file" name="img" id="img">
+	<button class="button" id="button" type="button">submit</button>
+</form>
+
+<h2> Class predicted : <div id="prediction"> </div> </h2>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript" language="javascript" src="../static/main.js"></script>
+<script src= "https://code.jquery.com/ui/1.12.1/jquery-ui.js"> </script> 
+</body>
+</html>
