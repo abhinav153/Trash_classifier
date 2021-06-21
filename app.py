@@ -70,7 +70,7 @@ def submit():
 
 
 		#loading model net
-		model_path = '../saved_models/MobileNetV2'
+		model_path = 'saved_models/MobileNetV2'
 		model = tf.keras.models.load_model(model_path)
 		#print(model)	
 
