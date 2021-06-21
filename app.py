@@ -23,7 +23,7 @@ def prediction(img,model):
 	#predicting image
 	return class_names[model.predict(tensor_img).argmax()]
 
-@app.route('/',methods=['GET'])
+@app.route('/')
 def index_page():
 	return render_template('index.html')
 
