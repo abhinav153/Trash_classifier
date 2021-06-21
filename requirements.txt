@@ -2,7 +2,5 @@ tensorflow==2.5.0
 tensorflow_hub==0.8.0
 opencv-python
 numpy==1.19.5
-matplotlib
-pillow
 flask==1.0.2
-numpy==1.19.5
+
